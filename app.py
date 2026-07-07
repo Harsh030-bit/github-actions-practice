@@ -2,7 +2,7 @@
 # Doing test 3 for linter
 #Doing a Deliberate syntax error in code to check the linter working through ZGithub Action 
 
-import os  # Deliberate mistake: unused import, Ruff should catch this
+
 from flask import Flask, render_template
 app = Flask(__name__)
 
