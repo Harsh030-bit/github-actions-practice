@@ -4,5 +4,5 @@
 
 ##1. Workflows
 
-To create a Github actions workflow you need a floder called /github/workflows
+To create a Github actions workflow you need a floder called .github/workflows
 
