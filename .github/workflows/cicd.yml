@@ -14,8 +14,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Build using docker"
-       run: echo "Building using doocker"
+      - name: Build using docker
+        run: echo "Building using doocker"
 
   test:
     runs-on: ubuntu-latest
