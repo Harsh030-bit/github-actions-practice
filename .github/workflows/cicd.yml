@@ -12,18 +12,22 @@ jobs:
     
 
   build:
+    needs: [code]
     runs-on: ubuntu-latest
     steps:
       - name: Build using docker
         run: echo "Building using doocker"
 
   test:
+  # Trest will wait until build is completed through needs
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - name: Running Test cases
         run: echo "Testing the application"
 
   deploy:
+    needs: [build,test]
     runs-on: ubuntu-latest
     steps:
       - name: Deploying on the machine
