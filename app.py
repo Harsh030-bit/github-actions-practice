@@ -11,9 +11,6 @@ app = Flask(__name__)
 def hello_world():
     return render_template('index.html')
 
-Adding a secuity check {
-    def Sec Harshit_error
-
 
 @app.route('/health')
 def health():
