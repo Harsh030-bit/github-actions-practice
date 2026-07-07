@@ -1,3 +1,5 @@
+#the code is taken from one of remote repo
+
 from flask import Flask, render_template
 app = Flask(__name__)
 
