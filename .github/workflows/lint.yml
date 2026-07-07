@@ -17,5 +17,8 @@ jobs:
   #this step will install the linting tool pip install ruff is used in python to deal with linter
       - name: Install Linter
         run: pip install ruff
+# this step will actually run the linter and check our file
+      - name: Check the files for linting
+        run: ruff check.
       
     
